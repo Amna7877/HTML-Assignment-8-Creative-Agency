@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Agency Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right black, white, #36353533, #ff00aa, #0688bf, #ffd14f, black, white, #36353533, );
+            color: rgb(0, 0, 0);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background: #ff00aa;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #222121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            position: relative;
+            padding: 12px 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: rgb(5, 5, 5);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: currentColor;
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-home {
+            color: #e91e63;
+        }
+
+        .nav-services {
+            color: #3f51b5;
+        }
+
+        .nav-about {
+            color: #4caf50;
+        }
+
+        .nav-contact {
+            color: #ff9800;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        .service,
+        .contact-form {
+            flex: 1 1 48%;
+            min-width: 280px;
+            background: rgb(248, 231, 231);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+
+        .service h3,
+        .contact-form h3 {
+            color: #ff00aa;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 95%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button {
+            background-color: #ff00aa;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #e60099;
+        }
+
+        footer {
+            background-color: #ff00aa;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Creative Agency</h1>
+        <p>Innotiative Solutions for Your Business</p>
+    </header>
+
+    <nav>
+        <a href="#" class="nav-home">Home</a>
+        <a href="#" class="nav-services">Services</a>
+        <a href="#" class="nav-about">About</a>
+        <a href="#" class="nav-contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Crafting responsive and user-friendly websites tailored to your business need.</p>
+        </div>
+
+        <div class="service">
+            <h3>Graphic Design</h3>
+            <p>Creating visually appealing designs that communicate your brands message effectively.</p>
+        </div>
+
+        <div class="service">
+            <h3>SEO Optimization</h3>
+            <p>Enhance your online presence to rank higher on search engines and attract more traffic.</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>2025 Creative Agency</p>
+    </footer>
+</body>
+
+</html>
